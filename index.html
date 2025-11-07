@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css-assets/scripts.css">
 </head>
 <body>
-
+<!--Landing screen -->
   <div id="landing" class="page active">
     <div class="landing-container">
       <div class="illustration-side"></div>
@@ -32,5 +32,80 @@
     </div>
   </div>  
 
+<!--Home Screen-->
+  <div id="home" class="page">
+    <div class="hero-carousel">
+      <div class="carousel-slide active" style="background-image: url('https://images.unsplash.com/photo-1543449131-67488223a126?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170');">
+      </div>
+
+     <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1651933081141-57ae540cf90b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1331');">
+      </div>
+    
+      <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1696243144337-cb0532507e9a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171');">
+      </div>
+
+      <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=1600');">
+      </div>
+      <div class="">
+      </div>
+      
+      <button class="carousel-nav carousel-prev" onclick="changeSlide(-1)">‹</button>
+      <button class="carousel-nav carousel-next" onclick="changeSlide(1)">›</button>
+    </div>
+    <div class="container">
+      <h2 class="section-title">Popular Courses</h2>
+      <div class="course-cards-home">
+        <div class="course-card-home" onclick="showPage('first-aid')">
+          <span class="course-badge">6 MONTHS</span>
+          <h3>First Aid</h3>
+          <div class="course-meta">
+            <span>500+ students</span>
+            <span>Beginner</span>
+          </div>
+        </div>
+        <div class="course-card-home" onclick="showPage('landscaping')">
+          <span class="course-badge">6 MONTHS</span>
+          <h3>Landscaping</h3>
+          <div class="course-meta">
+            <span>350+ students</span>
+            <span>Beginner</span>
+          </div>
+        </div>
+        <div class="course-card-home" onclick="showPage('life-skills')">
+          <span class="course-badge">6 MONTHS</span>
+          <h3>Life Skills</h3>
+          <div class="course-meta">
+            <span>600+ students</span>
+            <span>Beginner</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-section">
+  <h2 class="section-title" style="text-align:center; margin-bottom:2rem;">What Our Students Say</h2>
+
+  <div class="testimonials-grid">
+
+    <div class="testimonial-card">
+      <img src="https://i.pinimg.com/736x/2c/3b/dc/2c3bdc1509edfc734a5dd517ef7b11a5.jpg" class="testimonial-image" />
+      <p class="testimonial-text">Oh the website was wonderful, easy to navigate and provided me with all the information I needed, after I applied and got my training I was able to get a job as a nurse assistant</p>
+      <div class="testimonial-author">Owethu • Writer</div>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="https://i.pinimg.com/736x/29/d5/6f/29d56f529e63141ef88055b77eebcb57.jpg" class="testimonial-image" />
+      <p class="testimonial-text">WHAT A GREAT SERVICE, MY AUNTY HAS GOT A NEW AND BETTER JOB AFTER DOING 4 SIX MONTH COURSES</p>
+      <div class="testimonial-author">Bob • Designer</div>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="https://i.pinimg.com/736x/b8/7b/bd/b87bbd21bd318af20a22a0abd3af1297.jpg" class="testimonial-image" />
+      <p class="testimonial-text">My sister completed four of the six-month courses and was able to find a better job soon after.</p>
+      <div class="testimonial-author">Sphe • Developer</div>
+    </div>
+
+  </div>
+</div>
+
+<script src="js-assets/scripts.js"></script>
 </body>
 </html>
