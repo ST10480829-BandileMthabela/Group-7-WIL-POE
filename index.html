@@ -1,132 +1,160 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Empowering domestic workers and gardeners through professional skills training in Johannesburg">
-<meta name="Keywords" content="Courses, domestic workers, online learning">
-<meta name="Author" content="Sphesihle Jali, Bandile Mthabela">
-<title>Empowering the Nation</title>
-<link rel="stylesheet" href="css-assets/scripts.css">
-</head>
-<body>
-<!--Landing screen -->
-<div id="landing" class="page active">
-<div class="landing-container">
-<div class="illustration-side"></div>
-<div class="text-side">
-<div class="landing-logo">
-<div class="logo-icon"></div>
-<span class="landing-logo-text">Empowering the Nations</span>
-</div>
-<h1>
-<span class="highlight-green">CAREER TRAINING</span>
-<span class="subtitle">The training you need to elevate your work life</span>
-</h1>
-<div class="button-group">
-<button class="btn-getstarted" onclick="showPage('home')">Get started</button>
-<button class="btn-learn" onclick="showPage('about')">Learn about us</button>
 
-</div>
-</div>
-</div>
-</div>  
+ <!-- TOAST CONTAINER -->
+  <div class="toast-container" id="toast-container"></div>
 
-<!--Home Screen-->
-<div id="home" class="page">
-<div class="hero-carousel">
-<div class="carousel-slide active" style="background-image: url('https://images.unsplash.com/photo-1543449131-67488223a126?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170');">
+  <!-- HEADER -->
+  <header id="main-header">
+    <div class="container">
+      <div class="header-content">
+        <div class="landing-logo">
+            <div class="logo-icon"></div>
+            <span class="landing-logo-text">EMPOWERING THE NATIONS</span>
+        </div>
+
+        <div class="header-actions">
+          <div class="search-container">
+            <input type="text" class="search-bar" placeholder="SEARCH" id="search-input" />
+            <div class="search-results" id="search-results"></div>
+          </div>
+          <button class="cart-icon-btn" id="cart-btn" onclick="showPage('view-cart')">
+            🛒
+            <span id="cart-badge" class="cart-badge" style="display: none;">0</span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav id="main-nav">
+    <div class="container">
+      <div class="nav-bar">
+        <button class="nav-btn active" onclick="showPage('home', this)">Home</button>
+        <button class="nav-btn" onclick="showPage('courses', this)">Courses</button>
+        <button class="nav-btn" onclick="showPage('contact', this)">Contact Us</button>
+        <button class="nav-btn" onclick="showPage('about', this)">About Us</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- LANDING PAGE -->
+  <div id="landing" class="page active">
+    <div class="landing-container">
+      <div class="illustration-side"></div>
+      <div class="text-side">
+        <div class="landing-logo">
+        <div class="logo-icon"></div>
+        <span class="landing-logo-text">Empowering the Nations</span>
+        </div>
+       <h1>
+          <span class="highlight-green">CAREER TRAINING</span>
+          <span class="subtitle">The training you need to elevate your work life</span>
+        </h1>
+        <div class="button-group">
+        <button class="btn-getstarted" onclick="showPage('home')">Get started</button>
+        <button class="btn-learn" onclick="showPage('about')">Learn about us</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOME PAGE -->
+  <div id="home" class="page">
+    <div class="hero-carousel">
+      <div class="carousel-slide active" style="background-image: url('https://images.unsplash.com/photo-1543449131-67488223a126?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170');">
+      </div>
+
+     <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1651933081141-57ae540cf90b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1331');">
+      </div>
+    
+      <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1696243144337-cb0532507e9a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171');">
+      </div>
+
+      <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=1600');">
+      </div>
+      <div class="">
+      </div>
+      
+      <button class="carousel-nav carousel-prev" onclick="changeSlide(-1)">‹</button>
+      <button class="carousel-nav carousel-next" onclick="changeSlide(1)">›</button>
+    </div>
+    <div class="container">
+      <h2 class="section-title">Popular Courses</h2>
+      <div class="course-cards-home">
+        <div class="course-card-home" onclick="showPage('first-aid')">
+          <span class="course-badge">6 MONTHS</span>
+          <h3>First Aid</h3>
+          <div class="course-meta">
+            <span>500+ students</span>
+            <span>Beginner</span>
+          </div>
+        </div>
+        <div class="course-card-home" onclick="showPage('landscaping')">
+          <span class="course-badge">6 MONTHS</span>
+          <h3>Landscaping</h3>
+          <div class="course-meta">
+            <span>350+ students</span>
+            <span>Beginner</span>
+          </div>
+        </div>
+        <div class="course-card-home" onclick="showPage('life-skills')">
+          <span class="course-badge">6 MONTHS</span>
+          <h3>Life Skills</h3>
+          <div class="course-meta">
+            <span>600+ students</span>
+            <span>Beginner</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-section">
+  <h2 class="section-title" style="text-align:center; margin-bottom:2rem;">What Our Students Say</h2>
+
+  <div class="testimonials-grid">
+
+    <div class="testimonial-card">
+      <img src="https://i.pinimg.com/736x/2c/3b/dc/2c3bdc1509edfc734a5dd517ef7b11a5.jpg" class="testimonial-image" />
+      <p class="testimonial-text">Oh the website was wonderful, easy to navigate and provided me with all the information I needed, after I applied and got my training I was able to get a job as a nurse assistant</p>
+      <div class="testimonial-author">Owethu • Writer</div>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="https://i.pinimg.com/736x/29/d5/6f/29d56f529e63141ef88055b77eebcb57.jpg" class="testimonial-image" />
+      <p class="testimonial-text">WHAT A GREAT SERVICE, MY AUNTY HAS GOT A NEW AND BETTER JOB AFTER DOING 4 SIX MONTH COURSES</p>
+      <div class="testimonial-author">Bob • Designer</div>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="https://i.pinimg.com/736x/b8/7b/bd/b87bbd21bd318af20a22a0abd3af1297.jpg" class="testimonial-image" />
+      <p class="testimonial-text">My sister completed four of the six-month courses and was able to find a better job soon after.</p>
+      <div class="testimonial-author">Sphe • Developer</div>
+    </div>
+
+  </div>
 </div>
 
-<div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1651933081141-57ae540cf90b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1331');">
-</div>
 
-<div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1696243144337-cb0532507e9a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171');">
-</div>
+    </div> <!-- CLOSES .container -->
+  </div> <!-- CLOSES #home -->
 
-<div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=1600');">
-</div>
-<div class="">
-</div>
+  <!-- COURSES OVERVIEW -->
+  <div id="courses" class="page">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="#" class="breadcrumb-link" onclick="showPage('home'); return false;">Home</a>
+        <span class="breadcrumb-separator">›</span>
+        <span class="breadcrumb-current">Courses</span>
+      </div>
+      <h2 class="section-title">Courses</h2>
+      <div class="course-type-cards">
+        <div class="course-type-card" onclick="showPage('six-month')"><h3>6 Months</h3></div>
+        <div class="course-type-card" onclick="showPage('six-week')"><h3>6 Week</h3></div>
+      </div>
+    </div>
+  </div>
 
-<button class="carousel-nav carousel-prev" onclick="changeSlide(-1)">‹</button>
-<button class="carousel-nav carousel-next" onclick="changeSlide(1)">›</button>
-</div>
-<div class="container">
-<h2 class="section-title">Popular Courses</h2>
-<div class="course-cards-home">
-<div class="course-card-home" onclick="showPage('first-aid')">
-<span class="course-badge">6 MONTHS</span>
-<h3>First Aid</h3>
-<div class="course-meta">
-<span>500+ students</span>
-<span>Beginner</span>
-</div>
-</div>
-<div class="course-card-home" onclick="showPage('landscaping')">
-<span class="course-badge">6 MONTHS</span>
-<h3>Landscaping</h3>
-<div class="course-meta">
-<span>350+ students</span>
-<span>Beginner</span>
-</div>
-</div>
-<div class="course-card-home" onclick="showPage('life-skills')">
-<span class="course-badge">6 MONTHS</span>
-<h3>Life Skills</h3>
-<div class="course-meta">
-<span>600+ students</span>
-<span>Beginner</span>
-</div>
-</div>
-</div>
-<div class="testimonial-section">
-<h2 class="section-title" style="text-align:center; margin-bottom:2rem;">What Our Students Say</h2>
-
-<div class="testimonials-grid">
-
-<div class="testimonial-card">
-<img src="https://i.pinimg.com/736x/2c/3b/dc/2c3bdc1509edfc734a5dd517ef7b11a5.jpg" class="testimonial-image" />
-<p class="testimonial-text">Oh the website was wonderful, easy to navigate and provided me with all the information I needed, after I applied and got my training I was able to get a job as a nurse assistant</p>
-<div class="testimonial-author">Owethu • Writer</div>
-</div>
-
-<div class="testimonial-card">
-<img src="https://i.pinimg.com/736x/29/d5/6f/29d56f529e63141ef88055b77eebcb57.jpg" class="testimonial-image" />
-<p class="testimonial-text">WHAT A GREAT SERVICE, MY AUNTY HAS GOT A NEW AND BETTER JOB AFTER DOING 4 SIX MONTH COURSES</p>
-<div class="testimonial-author">Bob • Designer</div>
-</div>
-
-<div class="testimonial-card">
-<img src="https://i.pinimg.com/736x/b8/7b/bd/b87bbd21bd318af20a22a0abd3af1297.jpg" class="testimonial-image" />
-<p class="testimonial-text">My sister completed four of the six-month courses and was able to find a better job soon after.</p>
-<div class="testimonial-author">Sphe • Developer</div>
-</div>
-
-</div>
-</div>
-
-</div> <!-- CLOSES .container -->
-</div> <!-- CLOSES #home -->
-
-
-<!-- COURSES OVERVIEW -->
-<div id="courses" class="page">
-<div class="container">
-<div class="breadcrumbs">
-<a href="#" class="breadcrumb-link" onclick="showPage('home'); return false;">Home</a>
-<span class="breadcrumb-separator">›</span>
-<span class="breadcrumb-current">Courses</span>
-</div>
-<h2 class="section-title">Courses</h2>
-<div class="course-type-cards">
-<div class="course-type-card" onclick="showPage('six-month')"><h3>6 Months</h3></div>
-<div class="course-type-card" onclick="showPage('six-week')"><h3>6 Week</h3></div>
-</div>
-</div>
-</div>
-
- <!-- SIX-MONTH COURSES -->
+  <!-- SIX-MONTH COURSES -->
   <div id="six-month" class="page">
     <div class="container">
       <div class="breadcrumbs">
@@ -191,23 +219,24 @@
       </div>
     </div>
   </div>
- <!-- COURSE DETAIL PAGES -->
+
+  <!-- COURSE DETAIL PAGES -->
   <div id="first-aid" class="page">
-    <divstyle="background-image: url('https://plus.unsplash.com/premium_photo-1661395122079-52e137916774?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170');"></div>
-    <div>
-      <div>
-        <div>
-          <a href="#"onclick="showPage('home'); return false;">Home</a>
-          <span>›</span>
-          <a href="#" onclick="showPage('courses'); return false;">Courses</a>
-          <span>›</span>
-          <span>First Aid</span>
+    <div class="course-hero" style="background-image: url('https://plus.unsplash.com/premium_photo-1661395122079-52e137916774?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170');"></div>
+    <div class="course-detail-section">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="#" class="breadcrumb-link" onclick="showPage('home'); return false;">Home</a>
+          <span class="breadcrumb-separator">›</span>
+          <a href="#" class="breadcrumb-link" onclick="showPage('courses'); return false;">Courses</a>
+          <span class="breadcrumb-separator">›</span>
+          <span class="breadcrumb-current">First Aid</span>
         </div>
-        <div>
-          <h1>FIRST AID</h1>
-          <div>ZAR 1500</div>
-          <div>
-            <div>
+        <div class="course-detail-content">
+          <h1 class="course-detail-title">FIRST AID</h1>
+          <div class="course-detail-price">ZAR 1500</div>
+          <div class="course-details-grid">
+            <div class="what-you-learn">
               <h3>What You'll Learn</h3>
               <ul>
                 <li>Proper wound treatment and bandaging techniques</li>
@@ -218,12 +247,12 @@
                 <li>Basic life support certification preparation</li>
               </ul>
             </div>
-            <div>
-              <div><div>Duration</div><div>6 Months</div></div>
-              <div><div>Level</div><div>Beginner</div></div>
-              <div><div>Students</div><div>400+</div></div>
-              <div><div >Certificate</div><div>Yes</div></div>
-              <button onclick="addToCart('First Aid', 1500, this)">ADD TO CART</button>
+            <div class="course-sidebar">
+              <div class="course-info-item"><div class="info-label">Duration</div><div class="info-value">6 Months</div></div>
+              <div class="course-info-item"><div class="info-label">Level</div><div class="info-value">Beginner</div></div>
+              <div class="course-info-item"><div class="info-label">Students</div><div class="info-value">400+</div></div>
+              <div class="course-info-item"><div class="info-label">Certificate</div><div class="info-value">Yes</div></div>
+              <button class="add-to-cart-btn-large" onclick="addToCart('First Aid', 1500, this)">ADD TO CART</button>
             </div>
           </div>
         </div>
@@ -231,7 +260,7 @@
     </div>
   </div>
 
-    <div id="sewing" class="page">
+  <div id="sewing" class="page">
     <div class="course-hero" style="background-image: url('https://images.unsplash.com/photo-1542044801-30d3e45ae49a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070');"></div>
     <div class="course-detail-section">
       <div class="container">
@@ -464,7 +493,8 @@
       </div>
     </div>
   </div>
- <!-- VIEW CART -->
+
+  <!-- VIEW CART -->
   <div id="view-cart" class="page">
     <div class="container">
       <div class="breadcrumbs">
@@ -479,29 +509,35 @@
       </div>
     </div>
   </div>
+
   <!-- ABOUT -->
-  <div id="about" >
-    <div >
-      <div >
-        <a href="#"  onclick="showPage('home'); return false;">Home</a>
-        <span >›</span>
-        <span>About Us</span>
+  <div id="about" class="page">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="#" class="breadcrumb-link" onclick="showPage('home'); return false;">Home</a>
+        <span class="breadcrumb-separator">›</span>
+        <span class="breadcrumb-current">About Us</span>
       </div>
-      <button  onclick="showPage('home')">← Back</button>
-      <h2 >About Us</h2>
+      <button class="back-btn-top" onclick="showPage('home')">← Back</button>
+      <h2 class="section-title">About Us</h2>
       <div style="max-width: 800px; margin: 2rem auto; color: #666; line-height: 1.8; font-size: 1.05rem;">
         <p style="margin-bottom: 1.5rem;"></p>Founded in 2023, Empowering the Nation empowers South Africa's underserved communities—like domestic workers, gardeners, and aspiring entrepreneurs—through hands-on vocational training in essential skills such as first aid and landscaping, fostering independence, higher wages, and entrepreneurship to uplift over 500 lives in Johannesburg with graduates securing key roles in homes, businesses, and projects.</p>
       </div>
     </div>
   </div>
-  
-  <!-- CONTACT -->
-  <div id="contact">
 
-      <button onclick="showPage('home')">← Back</button>
-      <h2>Contact Us</h2>
-      <div>
-        <div >
+  <!-- CONTACT -->
+  <div id="contact" class="page">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="#" class="breadcrumb-link" onclick="showPage('home'); return false;">Home</a>
+        <span class="breadcrumb-separator">›</span>
+        <span class="breadcrumb-current">Contact</span>
+      </div>
+      <button class="back-btn-top" onclick="showPage('home')">← Back</button>
+      <h2 class="section-title">Contact Us</h2>
+      <div class="contact-layout">
+        <div class="contact-info">
           <h3>Tel: (035) 797 3581</h3>
           <h3>Cel: 073 886 7922</h3>
           <p>E-mail: <a href="mailto:EmpNation@gmail.com">EmpNation@gmail.com</a></p>
@@ -519,7 +555,8 @@
       </div>
     </div>
   </div>
-    <!-- FOOTER -->
+
+  <!-- FOOTER -->
   <footer>
     <div class="container">
       <div class="social-section" style="padding: 2rem 0 3rem;">
@@ -570,14 +607,14 @@
           <div class="logo-icon"></div>
           <span>© 2025 INSPIRING THE NATION</span>
         </div>
-    
+        <select class="language-selector">
+          <option>ENGLISH</option>
+          <option>AFRIKAANS</option>
+          <option>ZULU</option>
+        </select>
       </div>
     </div>
-  </footer>
-
-
-
-
+  </footer>  
 <script src="js-assets/scripts.js"></script>
 </body>
-</html>
+</html>!
