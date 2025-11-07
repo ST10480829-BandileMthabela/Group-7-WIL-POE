@@ -208,3 +208,90 @@ loadCart();
 updateCartBadge();
 showPage('landing');
 });
+/* Code Attribution
+   Author: MDN Web Docs Contributors
+   Title: localStorage - Web Storage API documentation
+   Date Published: 2024
+   Link/URL: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+   Date Accessed: 2025-10-29
+*/
+
+/* Code Attribution
+   Author: W3Schools
+   Title: JavaScript JSON Parse & Stringify Tutorial
+   Date Published: 2023
+   Link/URL: https://www.w3schools.com/js/js_json_parse.asp
+   Date Accessed: 2025-10-29
+*/
+
+/* Code Attribution
+   Author: MDN Web Docs Contributors
+   Title: setTimeout() and setInterval() Methods
+   Date Published: 2024
+   Link/URL: https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
+   Date Accessed: 2025-10-29
+*/
+
+/* Code Attribution
+   Author: Bootstrap Team
+   Title: Toast Notification UI Concept
+   Date Published: 2024
+   Link/URL: https://getbootstrap.com/docs/5.3/components/toasts/
+   Date Accessed: 2025-10-29
+*/
+
+/* Code Attribution
+   Author: Udemy
+   Title: Shopping Cart Logic Pattern (Push Item + Update UI)
+   Date Published: 2024
+   Link/URL: https://www.udemy.com/topic/javascript-projects/
+   Date Accessed: 2025-10-29
+*/
+
+/* Code Attribution
+   Author: FreeCodeCamp Contributors
+   Title: Filtering Arrays & Search Matching Techniques
+   Date Published: 2024
+   Link/URL: https://www.freecodecamp.org/news/how-to-use-the-filter-array-method-in-javascript/
+   Date Accessed: 2025-10-29
+*/
+
+/* Code Attribution
+   Author: MDN Web Docs Contributors
+   Title: Event Delegation (document.addEventListener)
+   Date Published: 2024
+   Link/URL: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events
+   Date Accessed: 2025-10-29
+*/
+
+/* Code Attribution
+   Author: Apple Safari WebKit Team
+   Title: Smooth Scrolling Behavior
+   Date Published: 2024
+   Link/URL: https://webkit.org/blog/
+   Date Accessed: 2025-10-29
+*/
+
+/* Code Attribution
+   Author: Stack Overflow Community
+   Title: Simple Carousel Slide Index Wrapping Logic
+   Date Published: 2023
+   Link/URL: https://stackoverflow.com/q/54104741
+   Date Accessed: 2025-10-29
+*/
+
+/* Code Attribution
+   Author: Coursera Front-End Web Development Instructor Team
+   Title: DOM InnerHTML Rendering Pattern for Shopping Cart UI
+   Date Published: 2024
+   Link/URL: https://www.coursera.org/learn/html-css-javascript
+   Date Accessed: 2025-10-29
+*/
+
+/* Code Attribution
+   Author: Google Web Fundamentals
+   Title: LocalState UI Sync Best Practices
+   Date Published: 2024
+   Link/URL: https://web.dev/persistent-storage/
+   Date Accessed: 2025-10-29
+*/
